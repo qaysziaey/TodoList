@@ -3,23 +3,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
     <title>TODO</title>
 </head>
 <body>
     <div class="box">
         <h1>TODO</h1>
-        <hr>
         <div class="message-box">
           <p></p>
         </div>
       
         <input id="user-input" type="input" placeholder="Add new tasks"></input>
-        <button id="x-btn" class="x-btn"> x </button>
-        <br>
-        <input id="add-btn" type="button" value="Add">
-        <input id="delete-btn" type="button" value="Delete">
-        <input id="x-btn" type="button" value="Delete">
-        <ol id="demo"></ol>
+        <div class="btns-ontainer">
+            <!--<input id="x-btn" type="button" value=" x ">-->
+            <input id="add-btn" type="button" value="Add">
+            <input id="delete-btn" type="button" value="Delete">
+        </div>
+        <hr>
+        <div class="todo-items">
+            <ol id="demo"></ol>
+        </div>
+        
       </div>
+
+      <script src="app.js"></script>
 </body>
 </html>

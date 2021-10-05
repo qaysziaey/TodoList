@@ -19,8 +19,8 @@ function AddItem() {
     "Task has been added.");
 
   if (addedItem && getInput) {
-    showMsgBox;
-    msgSuccess;
+    showMsgBox
+    msgSuccess
   } else {
     showMsgBox.style.visibility = "hidden";
   }

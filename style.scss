@@ -1,46 +1,100 @@
+body{
+    background-color: #f1f2f6;
+}
 .box {
     background: #fffb;
-    width: 300px;
-    height: 300px;
+    width: 400px;
     padding: 20px;
-    border-radius: 6px;
+    border-radius: 12px;
+    padding: 30px;
     position: absolute;
-    margin: auto;
-    border: 2px solid blue;
-  }
-  
-  h2 {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    //border: 2px solid blue;
+    box-shadow: 0 1px 2px #d1d8e0;
+    
+}
+
+h1{
+    font-size: 48px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffa502;
+}
+h2 {
     font-size: 58px;
-  }
-  
-  input[type="button"] {
+}
+
+ol{
+    li {
+        color: #57606f;
+        font-size: 16px;
+        font-family: 'ubuntu', sans-serif;
+    }
+}
+
+input[type="button"] {
     padding: 10px;
-    font-family: "ubuntu", sans serif;
+    font-family: "ubuntu", sans-serif;
     margin: 10px 0;
     border-radius: 6px;
-    border: 1px solid #d1d8e0;
-    background-color: white;
-    width: 100px;
-  }
-  
-  input[type="button"]:hover {
+    //border: 1px solid #d1d8e0;
+    width: 130px;
+}
+
+// Container for all buttons
+.btns-ontainer{
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 6px;
+}
+
+#add-btn, #delete-btn{
+    background-color: #2ed573;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 15px 20px;
+
+    &:hover{
+        
+        background-color: #7bed9f;
+    }
+}
+
+#delete-btn{
+    background-color: #ff4757;
+
+    &:hover{
+        background-color: #ff6b81;
+    }
+}
+
+input[type="button"]:hover {
     box-shadow: 0 1px 2px #d1d8e0;
-  }
-  
-  input[type="input"] {
-    padding: 10px;
-    border-radius: 6px;
-    border: 1px solid #d1d8e0;
-  }
-  
-  .message-box {
-    border: 1px solid #4a8251;
-    background-color: #b1d2b5;
-    padding: 0 6px;
-    border-radius: 6px;
+}
+
+input[type="input"] {
+    padding: 20px 10px;
+    border-radius: 8px;
+    border: 2px solid #ebecf3;
+    width: 100%;
+    font-size: 18px;
+}
+::placeholder{
+    color: #dfe4ea;
+}
+
+.message-box {
+    //border: 2px solid #9ddbba;
+    background-color: #d9f7e8;
+    padding: 4px 10px;
+    border-radius: 5px;
     visibility: hidden;
-  }
-  
-  .message-box p {
-    font-family: "ubuntu", sans serif;
-  }
+    margin: 10px 0;
+
+    p{
+        font-family: "ubuntu", sans serif;
+        color: #199754;
+    }
+}
