@@ -3,41 +3,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dstyle.css">
-    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.2/css/bulma.min.css">
     <title>TODO</title>
 </head>
 <body>
 
-
-
-
-    <div class="box">
-        <h1>TODO</h1>
-        <div class="message-box">
-          <p></p>
-        </div>
-      
-        <input id="user-input" type="input" placeholder="Add new tasks"></input>
-        <div class="btns-ontainer">
-            <!--<input id="x-btn" type="button" value=" x ">-->
-            <input id="add-btn" type="button" value="Add">
-            <input id="delete-btn" type="button" value="Delete">
-        </div>
-        <hr>
-        <div class="todo-items">
-            <ol id="demo"></ol>
-        </div>
+    <div class="container p-1">
         <div class="box">
-            <h1 class="title">
-                <i data-feather="circle"></i>
-            </h1>
+            <div class="field">
+                <h1 class="title">TODO</h1>
+                <div class="notification is-success is-light message-box my-1"></div>
+                <label class="label">Write down the Tasks you want to do </label>
+                <div class="control is-medium">
+                  <input id="user-input" class="input is-medium" type="text" placeholder="Add new task">
+                </div>
+            </div>
+            <div id="add-btn"    class="button is-medium is-success is-light"><em data-feather="plus"></em>Add</div>
+            <div id="delete-btn" class="button is-medium is-danger is-light"><em data-feather="trash-2"></em>Delete</div>
+            <div id="task-item"  class="box my-4 p-4 tasks">
+                <!-- All tasks will be listed here-->
+            </div>
         </div>
-      </div>
+    </div>
 
-      <script>
-        feather.replace()
-      </script>
-      <script src="app.js"></script>
+    <!-- scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
+    <script src="app.js"></script>
+    <script>feather.replace()</script>
+    
 </body>
 </html>
